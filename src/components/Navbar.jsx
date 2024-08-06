@@ -40,7 +40,7 @@ const Navbar = () => {
             </li>
           ))}
           <li><a href="https://github.com/TheCaptain1810" target='_blank' title='Github'><i class="fa-brands fa-github"></i></a></li>
-          <li><a href='src/assets/resume.pdf' target='_blank'>Download Resume</a></li>
+          <li><a href='https://github.com/TheCaptain1810/Resume/blob/main/Main%20Resume.pdf' target='_blank'>Download Resume</a></li>
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
