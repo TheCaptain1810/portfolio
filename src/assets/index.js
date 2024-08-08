@@ -25,9 +25,9 @@ import IASC from "./company/IASC.png";
 import bws from "./company/bws.png";
 import spaceclub from "./company/spaceclub.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import swolenormous from "./swolenormous.png";
+import nasa from "./nasa.png";
+import todolist from "./todolist.png";
 
 export {
   logo,
@@ -54,7 +54,7 @@ export {
   IASC,
   bws,
   spaceclub,
-  carrent,
-  jobit,
-  tripguide,
+  swolenormous,
+  nasa,
+  todolist,
 };

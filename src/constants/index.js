@@ -14,14 +14,12 @@ import {
   mongodb,
   git,
   figma,
-  docker,
   bws,
   spaceclub,
   IASC,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+  swolenormous,
+  nasa,
+  todolist,
 } from "../assets";
 
 export const navLinks = [
@@ -166,30 +164,26 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Fitness Application",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform that allows users to generate personalized workouts according to their fitness goals and keep track of them. Get Swolenormous.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
         name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: swolenormous,
+    source_code_link: "https://github.com/TheCaptain1810/fitness-app",
   },
   {
-    name: "Job IT",
+    name: "Nasa API",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web application that enables users to see new images uploaded by the nasa and related information everyday with the help of an API.",
     tags: [
       {
         name: "react",
@@ -200,33 +194,29 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: nasa,
+    source_code_link: "https://github.com/TheCaptain1810/nasa-react-app",
   },
   {
-    name: "Trip Guide",
+    name: "To-do List",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A web application that lets users create a to-do list, add tasks, update tasks, and delete them. This is my first react project so please don't judge.😳",
     tags: [
       {
-        name: "nextjs",
+        name: "reactjs",
         color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
       },
       {
         name: "css",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: todolist,
+    source_code_link: "https://github.com/TheCaptain1810/todolist",
   },
 ];
 
