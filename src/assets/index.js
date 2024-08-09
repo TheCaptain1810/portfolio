@@ -26,6 +26,8 @@ import bws from "./company/bws.png";
 import spaceclub from "./company/spaceclub.png";
 
 import swolenormous from "./swolenormous.png";
+import GPT3 from "./GPT3.png";
+import quotegen from "./quotegen.png";
 import nasa from "./nasa.png";
 import todolist from "./todolist.png";
 
@@ -55,6 +57,8 @@ export {
   bws,
   spaceclub,
   swolenormous,
+  GPT3,
+  quotegen,
   nasa,
   todolist,
 };

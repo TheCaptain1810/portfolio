@@ -18,6 +18,8 @@ import {
   spaceclub,
   IASC,
   swolenormous,
+  GPT3,
+  quotegen,
   nasa,
   todolist,
 } from "../assets";
@@ -179,6 +181,41 @@ const projects = [
     ],
     image: swolenormous,
     source_code_link: "https://github.com/TheCaptain1810/fitness-app",
+  },
+  {
+    name: "GPT3 Website",
+    description:
+      "A Frontend application for an AI product named GPT3 using React.js. It serves as an interface for the official website of the company.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: GPT3,
+    source_code_link:
+      "https://github.com/TheCaptain1810/A-frontend-GPT3-project",
+  },
+  {
+    name: "Quote Generator",
+    description:
+      "A web application that lets users generate various quotes using an API and share them on social media websites such as Twitter and Tumblr.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: quotegen,
+    source_code_link: "https://github.com/TheCaptain1810/quote_generation",
   },
   {
     name: "Nasa API",
