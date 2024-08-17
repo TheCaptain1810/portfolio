@@ -5,6 +5,7 @@ import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
 
 const Hero = () => {
+
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -43,7 +44,9 @@ const Hero = () => {
       </div>
       
       {!isMobile ? (<ComputersCanvas />) 
-        : <p className={`${styles.sectionSubText} text-white text-center font-bold mt-40`}>Scroll down or click on the icon below<br /> to get to know me better!</p>
+        : <div className='flex justify-center items-start mt-24'>
+            <p className={`${styles.sectionSubText} text-white text-center font-bold w-[200px] flex-nowrap`}>Scroll down or click on the icon below<br /> to get to know me better!</p>
+          </div>
       }
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
