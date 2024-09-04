@@ -58,42 +58,52 @@ const technologies = [
   {
     name: "HTML 5",
     icon: html,
+    link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
   },
   {
     name: "CSS 3",
     icon: css,
+    link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
   },
   {
     name: "JavaScript",
     icon: javascript,
+    link: "https://www.javascript.com/",
   },
   {
     name: "React JS",
     icon: reactjs,
+    link: "https://react.dev/",
   },
   {
     name: "Redux Toolkit",
     icon: redux,
+    link: "https://redux-toolkit.js.org/",
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
+    link: "https://tailwindcss.com/",
   },
   {
     name: "Node JS",
     icon: nodejs,
+    link: "https://nodejs.org/en",
   },
   {
     name: "MongoDB",
     icon: mongodb,
+    link: "https://www.mongodb.com/",
   },
   {
     name: "git",
     icon: git,
+    link: "https://git-scm.com/",
   },
   {
     name: "figma",
     icon: figma,
+    link: "https://www.figma.com/",
   },
 ];
 
