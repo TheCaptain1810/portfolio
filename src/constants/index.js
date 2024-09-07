@@ -191,6 +191,7 @@ const projects = [
     ],
     image: swolenormous,
     source_code_link: "https://github.com/TheCaptain1810/fitness-app",
+    link: "https://thecaptain-swolenormous.netlify.app/",
   },
   {
     name: "GPT3 Website",
@@ -209,6 +210,7 @@ const projects = [
     image: GPT3,
     source_code_link:
       "https://github.com/TheCaptain1810/A-frontend-GPT3-project",
+    link: "https://gpt3-website.pages.dev/",
   },
   {
     name: "Quote Generator",
@@ -226,6 +228,7 @@ const projects = [
     ],
     image: quotegen,
     source_code_link: "https://github.com/TheCaptain1810/quote_generation",
+    link: "https://thecaptain-quote-generator.netlify.app/",
   },
   {
     name: "Nasa API",
@@ -247,6 +250,7 @@ const projects = [
     ],
     image: nasa,
     source_code_link: "https://github.com/TheCaptain1810/nasa-react-app",
+    link: "https://thecaptain-nasa-api.netlify.app/",
   },
   {
     name: "To-do List",
@@ -264,6 +268,7 @@ const projects = [
     ],
     image: todolist,
     source_code_link: "https://github.com/TheCaptain1810/todolist",
+    link: "https://thecaptain-todolist.netlify.app/",
   },
 ];
 
