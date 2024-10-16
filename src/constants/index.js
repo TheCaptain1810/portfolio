@@ -18,6 +18,8 @@ import {
   spaceclub,
   IASC,
   swolenormous,
+  techNotes,
+  moodtracker,
   GPT3,
   quotegen,
   nasa,
@@ -176,6 +178,58 @@ const testimonials = [
 
 const projects = [
   {
+    name: "techNotes",
+    description:
+      '"techNotes" is a note-taking application developed for small businesses to replace traditional sticky notes or other note-taking systems. It has secure authentication and authorization so that the admins and managers can control employees\' access.',
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "node",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MERN",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: techNotes,
+    source_code_link: "https://github.com/TheCaptain1810/technotes",
+    link: "https://technotes-wop8.onrender.com/",
+  },
+  {
+    name: "MoodTracker",
+    description:
+      "MoodTracker helps you track your daily mood!\n Create your mood record and see how you feel on every day of every year.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Next.js",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: moodtracker,
+    source_code_link: "https://github.com/TheCaptain1810/moodtracker",
+    link: "https://thecaptain-moodtracker.vercel.app/",
+  },
+  {
     name: "Fitness Application",
     description:
       "Web-based platform that allows users to generate personalized workouts according to their fitness goals and keep track of them. Get Swolenormous.",
@@ -211,24 +265,6 @@ const projects = [
     source_code_link:
       "https://github.com/TheCaptain1810/A-frontend-GPT3-project",
     link: "https://gpt3-website.pages.dev/",
-  },
-  {
-    name: "Quote Generator",
-    description:
-      "A web application that lets users generate various quotes using an API and share them on social media websites such as Twitter and Tumblr.",
-    tags: [
-      {
-        name: "reactjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: quotegen,
-    source_code_link: "https://github.com/TheCaptain1810/quote_generation",
-    link: "https://thecaptain-quote-generator.netlify.app/",
   },
   {
     name: "Nasa API",

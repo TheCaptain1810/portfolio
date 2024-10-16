@@ -26,6 +26,8 @@ import bws from "./company/bws.png";
 import spaceclub from "./company/spaceclub.png";
 
 import swolenormous from "./swolenormous.png";
+import techNotes from "./techNotes.png";
+import moodtracker from "./moodtracker.png";
 import GPT3 from "./GPT3.png";
 import quotegen from "./quotegen.png";
 import nasa from "./nasa.png";
@@ -57,6 +59,8 @@ export {
   bws,
   spaceclub,
   swolenormous,
+  techNotes,
+  moodtracker,
   GPT3,
   quotegen,
   nasa,
