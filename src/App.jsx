@@ -3,19 +3,22 @@ import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas } fr
 import { useState } from 'react';
 
 const App = () => {
+  const [theme, setTheme] = useState('dark');
 
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-primary">
+      <div className={`relative z-0 ${theme === 'light' ? 'bg-gray-800' : 'bg-primary'}`}>
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-          <Navbar />
+          <Navbar theme={theme} setTheme={setTheme} />
           <Hero />
         </div>
-        <About />
-        <Experience />
-        <Tech />
-        <Works />
-        {/* <Feedbacks /> */}
+        <div>
+          <About />
+          <Experience />
+          <Tech />
+          <Works />
+          {/* <Feedbacks /> */}
+        </div>
         <div className='relative z-0'>
           <Contact />
           <StarsCanvas />

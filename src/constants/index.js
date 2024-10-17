@@ -23,7 +23,7 @@ import {
   GPT3,
   quotegen,
   nasa,
-  todolist,
+  todolistgo,
 } from "../assets";
 
 export const navLinks = [
@@ -289,9 +289,9 @@ const projects = [
     link: "https://thecaptain-nasa-api.netlify.app/",
   },
   {
-    name: "To-do List",
+    name: "To-do List Go",
     description:
-      "A web application that lets users create a to-do list, add tasks, update tasks, and delete them. This is my first react project so please don't judge.😳",
+      "A web application that lets users create a to-do list, add tasks, update tasks, and delete them. The data is stored in the MongoDB database and the backend is built using Go.",
     tags: [
       {
         name: "reactjs",
@@ -301,10 +301,14 @@ const projects = [
         name: "css",
         color: "pink-text-gradient",
       },
+      {
+        name: "go",
+        color: "blue-text-gradient",
+      },
     ],
-    image: todolist,
-    source_code_link: "https://github.com/TheCaptain1810/todolist",
-    link: "https://thecaptain-todolist.netlify.app/",
+    image: todolistgo,
+    source_code_link: "https://github.com/TheCaptain1810/todolist-go",
+    link: "https://todolist-go.up.railway.app/",
   },
 ];
 

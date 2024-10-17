@@ -31,7 +31,7 @@ import moodtracker from "./moodtracker.png";
 import GPT3 from "./GPT3.png";
 import quotegen from "./quotegen.png";
 import nasa from "./nasa.png";
-import todolist from "./todolist.png";
+import todolistgo from "./todolist-go.png";
 
 export {
   logo,
@@ -64,5 +64,5 @@ export {
   GPT3,
   quotegen,
   nasa,
-  todolist,
+  todolistgo,
 };

@@ -5,13 +5,13 @@ import { styles } from '../styles';
 import { navLinks } from '../constants';
 import { logo, menu, close } from '../assets';
 
-const Navbar = () => {
+const Navbar = ({ theme, setTheme }) => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 ${theme === 'light' ? 'bg-gray-800' : 'bg-primary'}`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
@@ -51,6 +51,13 @@ const Navbar = () => {
           >
             <a href='https://github.com/TheCaptain1810/Resume/blob/main/Main%20Resume.pdf' target='_blank'>Download Resume</a>
           </li>
+          <li>
+            <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+              className={`text-secondary hover:text-white font-poppins font-medium cursor-pointer text-[16px]`}
+            >
+              {theme === 'light' ? <i className="fa-solid fa-moon"></i> : <i className="fa-solid fa-sun"></i>}
+            </button>
+          </li>
         </ul>
 
         <div className='md:hidden flex flex-1 justify-end items-center'>
@@ -88,6 +95,13 @@ const Navbar = () => {
                 className={`text-secondary hover:text-white font-poppins font-medium cursor-pointer text-[16px]`}
               >
                 <a href='https://github.com/TheCaptain1810/Resume/blob/main/Main%20Resume.pdf' target='_blank'>Download Resume</a>
+              </li>
+              <li>
+                <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+                  className={`text-secondary hover:text-white font-poppins font-medium cursor-pointer text-[16px]`}
+                >
+                  {theme === 'light' ? <i className="fa-solid fa-moon"></i> : <i className="fa-solid fa-sun"></i>}
+                </button>
               </li>
             </ul>
           </div>
