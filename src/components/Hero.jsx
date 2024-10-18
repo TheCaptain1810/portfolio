@@ -44,8 +44,9 @@ const Hero = () => {
       </div>
       
       {!isMobile ? (<ComputersCanvas />) 
-        : <div className='flex justify-center items-start mt-24'>
-            <p className={`${styles.sectionSubText} text-white text-center font-bold w-[200px] flex-nowrap`}>Scroll down or click on the icon below<br /> to get to know me better!</p>
+        : <div className='flex flex-col justify-center items-center mt-24'>
+            <i class="fa-solid fa-address-card  text-9xl"></i>
+            <p>Scroll below!</p>
           </div>
       }
 
