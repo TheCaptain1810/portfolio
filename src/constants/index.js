@@ -1,8 +1,4 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
   javascript,
   typescript,
   html,
@@ -14,14 +10,17 @@ import {
   mongodb,
   git,
   figma,
+  nextjs,
+  express,
+  postgresql,
+  python,
   bws,
-  spaceclub,
+  ncircle,
   IASC,
   swolenormous,
   techNotes,
   moodtracker,
   GPT3,
-  quotegen,
   nasa,
   todolistgo,
 } from "../assets";
@@ -41,41 +40,71 @@ export const navLinks = [
   },
 ];
 
+// Job titles, ordered from most to least relevant
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
+    title: "Software Engineer",
+    skills: "TypeScript · System design · Clean code",
   },
   {
-    title: "React Frontend Developer",
-    icon: mobile,
+    title: "Full-Stack Developer",
+    skills: "React · Node.js · MongoDB · PostgreSQL",
+  },
+  {
+    title: "MERN Stack Developer",
+    skills: "MongoDB · Express · React · Node.js",
+  },
+  {
+    title: "Frontend Developer",
+    skills: "React · Next.js · Redux · Tailwind CSS",
   },
   {
     title: "Backend Developer",
-    icon: backend,
+    skills: "Node.js · Express · REST APIs · Databases",
   },
 ];
 
+// Ordered by relevance to full-stack (TS/React/Node) roles
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-    link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-    link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    name: "TypeScript",
+    icon: typescript,
+    link: "https://www.typescriptlang.org/",
   },
   {
     name: "JavaScript",
     icon: javascript,
-    link: "https://www.javascript.com/",
+    link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   },
   {
     name: "React JS",
     icon: reactjs,
     link: "https://react.dev/",
+  },
+  {
+    name: "Next.js",
+    icon: nextjs,
+    link: "https://nextjs.org/",
+  },
+  {
+    name: "Node JS",
+    icon: nodejs,
+    link: "https://nodejs.org/en",
+  },
+  {
+    name: "Express.js",
+    icon: express,
+    link: "https://expressjs.com/",
+  },
+  {
+    name: "MongoDB",
+    icon: mongodb,
+    link: "https://www.mongodb.com/",
+  },
+  {
+    name: "PostgreSQL",
+    icon: postgresql,
+    link: "https://www.postgresql.org/",
   },
   {
     name: "Redux Toolkit",
@@ -88,22 +117,27 @@ const technologies = [
     link: "https://tailwindcss.com/",
   },
   {
-    name: "Node JS",
-    icon: nodejs,
-    link: "https://nodejs.org/en",
+    name: "Python",
+    icon: python,
+    link: "https://www.python.org/",
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
-    link: "https://www.mongodb.com/",
+    name: "HTML 5",
+    icon: html,
+    link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
   },
   {
-    name: "git",
+    name: "CSS 3",
+    icon: css,
+    link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+  },
+  {
+    name: "Git",
     icon: git,
     link: "https://git-scm.com/",
   },
   {
-    name: "figma",
+    name: "Figma",
     icon: figma,
     link: "https://www.figma.com/",
   },
@@ -111,68 +145,86 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Member of Technical Staff",
+    company_name: "nCircle Tech",
+    icon: ncircle,
+    iconBg: "#ffffff",
+    date: "Jul 2025 - Present",
+    points: [
+      "Developing and maintaining scalable full-stack web applications with TypeScript, React.js, Next.js, Node.js and MongoDB.",
+      "Collaborating with cross-functional teams to deliver end-to-end software solutions.",
+      "Focusing on performance, reliability and clean, maintainable code.",
+    ],
+  },
+  {
+    title: "Intern - Member of Technical Staff",
+    company_name: "nCircle Tech",
+    icon: ncircle,
+    iconBg: "#ffffff",
+    date: "Jan 2025 - Jul 2025",
+    points: [
+      "Built and deployed scalable web applications using React.js, Next.js, Node.js and Express.js.",
+      "Developed front-end interfaces and back-end APIs with secure data handling and robust functionality.",
+      "Contributed to code quality and performance through code reviews and issue resolution on real-world projects.",
+    ],
+  },
+  {
     title: "Full-stack Web Development Intern",
     company_name: "Business Web Solutions",
     icon: bws,
     iconBg: "#ffffff",
     date: "Oct 2022 - Dec 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, aFull-stack web development interns to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Technical Team Member",
-    company_name: "Space Club, RIT",
-    icon: spaceclub,
-    iconBg: "#ffffff",
-    date: "June 2022 - June 2023",
-    points: [
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-      "Designed and Researched on the various types of rockets and aviation systems.",
-    ],
-  },
-  {
-    title: "Citizen Scientist",
-    company_name: "International Astronomical Search Collaboration",
-    icon: IASC,
-    iconBg: "#ffffff",
-    date: "April 2023 - June 2023",
-    points: [
-      "Analyzing the near-Earth objects with the help of Astrometrica software.",
-      "In which 2 preliminary detections were done, named P21EO8h and P21EEZZ.",
+      "Developed and maintained several full-stack web applications using React.js, Node.js, Python and PostgreSQL.",
+      "Optimized performance of web applications, reducing load times by 30% and improving overall user experience.",
     ],
   },
 ];
 
-const testimonials = [
+const volunteering = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Pranav proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    title: "Citizen Scientist",
+    organization: "International Astronomical Search Collaboration",
+    icon: IASC,
+    date: "Apr 2023 - Jun 2023",
+    points: [
+      "Analyzed near-Earth objects using Astrometrica software.",
+      "Made 2 preliminary asteroid detections, named P21EO8h and P21EEZZ.",
+    ],
+  },
+];
+
+// icon = Font Awesome class. Add a `link` to make a card clickable (e.g. the credential URL).
+const certifications = [
+  {
+    name: "MongoDB Node.js Developer Path",
+    issuer: "MongoDB University",
+    icon: "fa-solid fa-leaf",
+    color: "#47a248",
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Pranav does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    name: "MongoDB Data Modeling Path",
+    issuer: "MongoDB University",
+    icon: "fa-solid fa-leaf",
+    color: "#47a248",
   },
   {
-    testimonial:
-      "After Pranav optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    name: "Back End Development and APIs",
+    issuer: "freeCodeCamp",
+    icon: "fa-brands fa-free-code-camp",
+    color: "#ffffff",
+  },
+  {
+    name: "Front End Development Libraries",
+    issuer: "freeCodeCamp",
+    icon: "fa-brands fa-free-code-camp",
+    color: "#ffffff",
+  },
+  {
+    name: "GitHub Foundations",
+    issuer: "GitHub",
+    icon: "fa-brands fa-github",
+    color: "#ffffff",
   },
 ];
 
@@ -312,4 +364,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, volunteering, certifications, projects };

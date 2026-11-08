@@ -5,9 +5,8 @@ import { styles } from '../styles';
 import { github } from '../assets';
 import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
-import { fadeIn, textVariant } from '../utils/motion';
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
+const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
   return (
     <motion.div>
       <Tilt
@@ -67,13 +66,9 @@ const Works = () => {
       </div>
 
       <div className='mt-20 flex flex-wrap gap-7'>
-        {projects.map((project, index) => (
-          <a href={project.link} target="_blank">
-            <ProjectCard
-              key={`project-${index}`}
-              index={index}
-              {...project}
-            />
+        {projects.map((project) => (
+          <a key={project.name} href={project.link} target="_blank" rel="noreferrer">
+            <ProjectCard {...project} />
           </a>
         ))}
       </div>
@@ -81,4 +76,4 @@ const Works = () => {
   )
 }
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "projects");

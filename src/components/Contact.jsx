@@ -26,9 +26,6 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    // template_wibnkpn
-    // service_vijib9l
-    // f5fsuHNHvoKpEQu_i
     emailjs.send(
       'service_vijib9l',
       'template_wibnkpn',
@@ -36,7 +33,7 @@ const Contact = () => {
         from_name: form.name,
         to_name: 'Pranav',
         from_email: form.email,
-        to_email: 'habitune@gmail.com',
+        to_email: 'itspranavpise@gmail.com',
         message: form.message,
       },
       'f5fsuHNHvoKpEQu_i'

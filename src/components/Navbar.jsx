@@ -3,15 +3,15 @@ import { Link } from 'react-router-dom';
 
 import { styles } from '../styles';
 import { navLinks } from '../constants';
-import { logo, menu, close } from '../assets';
+import { menu, close } from '../assets';
 
-const Navbar = ({ theme, setTheme }) => {
+const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 ${theme === 'light' ? 'bg-gray-800' : 'bg-primary'}`}
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
@@ -22,8 +22,7 @@ const Navbar = ({ theme, setTheme }) => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className='w-9 h-9 object-contain' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex'><span className="sm:block hidden">| Pranav Pise</span></p>
+          <p className='text-white text-[20px] font-bold cursor-pointer'>Pranav Pise</p>
         </Link>
         <ul className='list-none hidden md:flex flex-row gap-10'>
           {navLinks.map((link) => (
@@ -43,20 +42,8 @@ const Navbar = ({ theme, setTheme }) => {
             className={`text-secondary hover:text-white font-poppins font-medium cursor-pointer text-[16px]`}
           >
             <a href="https://github.com/TheCaptain1810" target='_blank' title='Github'>
-              <i class="fa-brands fa-github"></i>
+              <i className="fa-brands fa-github"></i>
             </a>
-          </li>
-          <li
-            className={`text-secondary hover:text-white font-poppins font-medium cursor-pointer text-[16px]`}
-          >
-            <a href='https://github.com/TheCaptain1810/Resume/blob/main/Main%20Resume.pdf' target='_blank'>Download Resume</a>
-          </li>
-          <li>
-            <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-              className={`text-secondary hover:text-white font-poppins font-medium cursor-pointer text-[16px]`}
-            >
-              {theme === 'light' ? <i className="fa-solid fa-moon"></i> : <i className="fa-solid fa-sun"></i>}
-            </button>
           </li>
         </ul>
 
@@ -88,20 +75,8 @@ const Navbar = ({ theme, setTheme }) => {
                 className={`text-secondary hover:text-white font-poppins font-medium cursor-pointer text-[16px]`}
               >
                 <a href="https://github.com/TheCaptain1810" target='_blank' title='Github'>
-                  <i class="fa-brands fa-github"></i>
+                  <i className="fa-brands fa-github"></i>
                 </a>
-              </li>
-              <li
-                className={`text-secondary hover:text-white font-poppins font-medium cursor-pointer text-[16px]`}
-              >
-                <a href='https://github.com/TheCaptain1810/Resume/blob/main/Main%20Resume.pdf' target='_blank'>Download Resume</a>
-              </li>
-              <li>
-                <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-                  className={`text-secondary hover:text-white font-poppins font-medium cursor-pointer text-[16px]`}
-                >
-                  {theme === 'light' ? <i className="fa-solid fa-moon"></i> : <i className="fa-solid fa-sun"></i>}
-                </button>
               </li>
             </ul>
           </div>

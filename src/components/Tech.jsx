@@ -1,5 +1,3 @@
-// import { BallCanvas } from './canvas';
-// The loading time for the Balls is very high and it is causing problems on mobile devices so I scratched the idea of using them
 import { SectionWrapper } from '../hoc';
 import { technologies } from '../constants';
 

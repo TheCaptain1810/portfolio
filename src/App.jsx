@@ -1,23 +1,21 @@
 import { BrowserRouter } from 'react-router-dom';
-import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas } from './components';
-import { useState } from 'react';
+import { About, Contact, Experience, Volunteering, Certifications, Hero, Navbar, Tech, Works, StarsCanvas } from './components';
 
 const App = () => {
-  const [theme, setTheme] = useState('dark');
-
   return (
     <BrowserRouter>
-      <div className={`relative z-0 ${theme === 'light' ? 'bg-gray-800' : 'bg-primary'}`}>
+      <div className='relative z-0 bg-primary'>
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-          <Navbar theme={theme} setTheme={setTheme} />
+          <Navbar />
           <Hero />
         </div>
         <div>
           <About />
           <Experience />
+          <Volunteering />
           <Tech />
+          <Certifications />
           <Works />
-          {/* <Feedbacks /> */}
         </div>
         <div className='relative z-0'>
           <Contact />

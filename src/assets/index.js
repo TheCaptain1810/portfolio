@@ -1,14 +1,8 @@
-import logo from "./logo.png";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
 import css from "./tech/css.png";
-import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
@@ -19,31 +13,31 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import nextjs from "./tech/nextjs.svg";
+import express from "./tech/express.svg";
+import postgresql from "./tech/postgresql.svg";
+import python from "./tech/python.svg";
 
 import IASC from "./company/IASC.png";
 import bws from "./company/bws.png";
-import spaceclub from "./company/spaceclub.png";
+import ncircle from "./company/ncircle.png";
 
 import swolenormous from "./swolenormous.png";
 import techNotes from "./techNotes.png";
 import moodtracker from "./moodtracker.png";
 import GPT3 from "./GPT3.png";
-import quotegen from "./quotegen.png";
 import nasa from "./nasa.png";
 import todolistgo from "./todolist-go.png";
+import profile from "./profile.jpg";
+import resume from "./resume.pdf";
 
 export {
-  logo,
-  backend,
-  creator,
-  mobile,
-  web,
+  profile,
+  resume,
   github,
   menu,
   close,
   css,
-  docker,
   figma,
   git,
   html,
@@ -54,15 +48,17 @@ export {
   redux,
   tailwind,
   typescript,
-  threejs,
+  nextjs,
+  express,
+  postgresql,
+  python,
   IASC,
   bws,
-  spaceclub,
+  ncircle,
   swolenormous,
   techNotes,
   moodtracker,
   GPT3,
-  quotegen,
   nasa,
   todolistgo,
 };
